@@ -180,8 +180,7 @@ sub {
 body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: sans-serif;
-}
+    font-family: "Poppins", sans-serif;}
 
 a {
     display: inline-block;
@@ -196,7 +195,7 @@ li {
 /* for wrapper */
 .wrapper {
     max-width: 1360px;
-    width: 60.1%;
+    width: 82%;
     margin: 0 auto;
 }
 
@@ -205,4 +204,142 @@ li {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+/* Added Header font sizes for h1 to h4 */
+h1 {
+    font-size: 2.8em;
+    font-weight: 450;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 700;
+}
+
+/* background color for sections */
+main section:nth-child(odd) {
+    background-color: rgb(238, 245, 243);
+}
+
+footer section {
+    background-color: rgba(99, 107, 249, 0.647);
+    text-align: center;
+}
+
+/* Styling Attributes for hompage */
+.homepage {
+    background-image: url("/assets/images/homepage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    text-align: end;
+    padding: 389px 0 325px;
+}
+
+.homepage p {
+    padding: 2% 0 1.6% 35%;
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-align: end;
+}
+
+ .button {
+     max-width: 40%;
+     padding: 1.6% 5%;
+     border-radius: 30px;
+     margin: 40px 0;
+     background-color: rgb(34, 34, 34);
+     font-size: 0.8em;
+     font-weight: 500;
+ }
+
+ a {
+     color: white;
+     font-size: small;
+ }
+
+
+ /* Styling attributes for social media icons */
+ .icon-img {
+     width: 3.5em;
+ }
+ 
+ .social-media-icons img {
+     border-radius: 50%;
+     background-color: rgb(189, 116, 116);
+     margin: 5%;
+ }
+
+ /* Styling attributes for footer */
+ .footer{
+    padding: 105px 0 55px;
+}
+
+.footer p{
+    padding: 22px 0 28px;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/* Styling attributes for working */
+.working {
+    padding: 83px 0 60px;
+}
+
+.working p {
+    color: black;
+    font-size: 1em;
+    line-height: 1.6em;
+    text-align: center;
+    padding: 13px 0;
+    font-size: medium;
+    font-weight: 500;
+
+}
+
+.working-img {
+    width: 50%;
+}
+
+.working-list {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.working-list li {
+    max-width: 100%;
+    border-style: solid;
+    padding: 50px 0;
+    border-color: black;
+    border-radius: 5px;
+    margin: 30px 2% 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.working-list p {
+    color: black;
+    line-height: 1.5em;
+    padding: 7px;
+}
+
+.working li:first-child {
+    margin-left: 0;
+}
+
+.working li:last-child {
+    margin-right: 0;
 }
