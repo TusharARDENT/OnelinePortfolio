@@ -354,3 +354,42 @@ footer section {
 .working li:last-child {
     margin-right: 0;
 }
+
+
+/* Styling attributes for about */
+.about-img {
+    max-width: 32%;
+    max-height: 348px;
+    height: 1%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-bottom: 2%
+}
+
+.about {
+    padding: 105px 0 98px;
+}
+
+.about h2 {
+    margin-top: 5%;
+}
+
+.about-me {
+    display: flex;
+    gap: 5%;
+}
+.about .social-media-icons{
+    margin-left: 4.5%;
+}
+.about .icon-img{
+    margin: 0 8px ;
+}
+
+.about h2{
+    margin: 35px 0 15px;
+}
+
+.about p{
+    line-height: 1.6em;
+}
+
