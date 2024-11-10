@@ -180,7 +180,8 @@ sub {
 body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;}
+    font-family: "Poppins", sans-serif;
+}
 
 a {
     display: inline-block;
@@ -414,18 +415,6 @@ footer section {
     margin: 13px 0 15px;
 }
 
-.contact .wrapper {
-    display: flex;
-}
-
-.contact .get-in-touch {
-    max-width: 40%;
-}
-
-.contact .contact-info {
-    max-width: 60%;
-}
-
 .design-image {
     max-width: 30%;
     min-width: 33.5%;
@@ -444,6 +433,74 @@ footer section {
     background-color: rgb(189, 116, 116);
 }
 
+/* Styling attributes for contact */
 .contact-icon {
     width: 1em;
+}
+
+.contact p{
+    margin: 12px 0 10px;
+    font-size: 1em;
+}
+.contact .wrapper {
+    display: flex;
+}
+
+.contact .get-in-touch {
+    max-width: 40%;
+    padding-top: 86px ;
+    padding-bottom: 62px;
+}
+
+.contact .button {
+    display: block;
+    justify-content: end;
+     max-width: 40%;
+     padding: 15px 5%;
+     border-radius: 30px;
+     margin: 32px 0;
+     background-color: rgb(34, 34, 34);
+     font-size: 1em;
+     font-weight: 500;
+ }
+
+input{
+        padding: 15px;
+        border: none;
+        border-bottom-style: solid;
+        border-bottom-width: 0.6px;
+        border-bottom-color: black;
+        margin: 56px 0 35px;
+        font-size: 1em;
+}
+
+
+textarea{
+        border: none;
+        border-bottom-style: solid;
+        border-bottom-width: 0.6px;
+        border-bottom-color: black;
+        padding: 15px;
+        font-family: "Poppins", sans-serif;
+        font-size: 1em;
+}
+
+.contact .contact-info {
+    max-width: 60%;
+    padding: 220px 0 50px;
+}
+ .contact-info p {
+     display: inline-block;
+     text-align: left;
+     margin: 0;
+ }
+
+.contact-info p:first-of-type{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.contact-info p:nth-of-type(3){
+    margin: 13px 0;
 }
