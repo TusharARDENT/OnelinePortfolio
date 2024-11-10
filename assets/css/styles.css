@@ -180,7 +180,8 @@ sub {
 body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;}
+    font-family: "Poppins", sans-serif;
+}
 
 a {
     display: inline-block;
@@ -220,7 +221,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 2em;
     font-weight: 700;
 }
@@ -243,7 +244,7 @@ footer section {
     width: 100%;
     height: auto;
     text-align: end;
-    padding: 389px 0 325px;
+    padding: 386px 0 323px;
 }
 
 .homepage p {
@@ -278,8 +279,9 @@ footer section {
  
  .social-media-icons img {
      border-radius: 50%;
-     background-color: rgb(189, 116, 116);
+     background-color: white;
      margin: 5%;
+    padding: 5px;
  }
 
  /* Styling attributes for footer */
@@ -310,30 +312,41 @@ footer section {
 }
 
 .working-img {
-    width: 50%;
+    max-width: 45%;
 }
 
 .working-list {
     max-width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .working-list li {
-    max-width: 100%;
+    min-width: 23%;
+    height: auto;
     border-style: solid;
-    padding: 50px 0;
+    padding: 60px 1.5% 58px;
     border-color: black;
     border-radius: 5px;
-    margin: 30px 2% 50px;
+    margin: 35px 2% 50px;
     background-color: white;
+    font-size: 1.2em;
     text-align: center;
+}
+/* 
+.working-list li:nth-child(3){
+    padding-bottom: 45px;
+} */
+
+.working h3{
+    margin-bottom: 7px;
 }
 
 .working-list p {
     color: black;
-    line-height: 1.5em;
-    padding: 7px;
+    line-height: 1.6em;
+    padding: 0;
 }
 
 .working li:first-child {
@@ -342,4 +355,152 @@ footer section {
 
 .working li:last-child {
     margin-right: 0;
+}
+
+
+/* Styling attributes for about */
+.about-img {
+    max-width: 32%;
+    max-height: 348px;
+    height: 1%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-bottom: 2%
+}
+
+.about {
+    padding: 105px 0 105px;
+}
+
+.about h2 {
+    margin-top: 5%;
+}
+
+.about-me {
+    display: flex;
+    gap: 5%;
+}
+.about .social-media-icons{
+    margin-left: 4.5%;
+}
+.about .icon-img{
+    margin: 0 8px ;
+}
+
+.about h2{
+    margin: 35px 0 15px;
+}
+
+.about p{
+    line-height: 1.6em;
+}
+
+/* Syling attributes for design */
+.design-figure {
+    display: flex;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.design-image:nth-child(even){
+    margin: 58px 3% 0 2%;
+}
+
+.design{
+    padding: 86px 0 100px;
+    text-align: center;
+}
+
+.design p{
+    margin: 13px 0 15px;
+}
+
+.design-image {
+    max-width: 30%;
+    min-width: 33.5%;
+    padding: 40px 0 52px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    margin:  58px 1% 0 0;
+    background-color: white;
+    text-align: center;
+}
+
+.social-media-icons img {
+    border-radius: 50%;
+    background-color: rgb(189, 116, 116);
+}
+
+/* Styling attributes for contact */
+.contact-icon {
+    width: 1em;
+}
+
+.contact p{
+    margin: 12px 0 10px;
+    font-size: 1em;
+}
+.contact .wrapper {
+    display: flex;
+}
+
+.contact .get-in-touch {
+    max-width: 40%;
+    padding-top: 86px ;
+    padding-bottom: 62px;
+}
+
+.contact .button {
+    display: block;
+    justify-content: end;
+     max-width: 40%;
+     padding: 15px 5%;
+     border-radius: 30px;
+     margin: 32px 0;
+     background-color: rgb(34, 34, 34);
+     font-size: 1em;
+     font-weight: 500;
+ }
+
+input{
+        padding: 15px;
+        border: none;
+        border-bottom-style: solid;
+        border-bottom-width: 0.6px;
+        border-bottom-color: black;
+        margin: 56px 0 35px;
+        font-size: 1em;
+}
+
+
+textarea{
+        border: none;
+        border-bottom-style: solid;
+        border-bottom-width: 0.6px;
+        border-bottom-color: black;
+        padding: 15px;
+        font-family: "Poppins", sans-serif;
+        font-size: 1em;
+}
+
+.contact .contact-info {
+    max-width: 60%;
+    padding: 220px 0 50px;
+}
+ .contact-info p {
+     display: inline-block;
+     text-align: left;
+     margin: 0;
+ }
+
+.contact-info p:first-of-type{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.contact-info p:nth-of-type(3){
+    margin: 13px 0;
 }
