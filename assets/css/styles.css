@@ -278,8 +278,9 @@ footer section {
  
  .social-media-icons img {
      border-radius: 50%;
-     background-color: rgb(189, 116, 116);
+     background-color: white;
      margin: 5%;
+    padding: 5px;
  }
 
  /* Styling attributes for footer */
@@ -367,7 +368,7 @@ footer section {
 }
 
 .about {
-    padding: 105px 0 98px;
+    padding: 105px 0 105px;
 }
 
 .about h2 {
@@ -393,3 +394,56 @@ footer section {
     line-height: 1.6em;
 }
 
+/* Syling attributes for design */
+.design-figure {
+    display: flex;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.design-image:nth-child(even){
+    margin: 58px 3% 0 2%;
+}
+
+.design{
+    padding: 86px 0 100px;
+    text-align: center;
+}
+
+.design p{
+    margin: 13px 0 15px;
+}
+
+.contact .wrapper {
+    display: flex;
+}
+
+.contact .get-in-touch {
+    max-width: 40%;
+}
+
+.contact .contact-info {
+    max-width: 60%;
+}
+
+.design-image {
+    max-width: 30%;
+    min-width: 33.5%;
+    padding: 40px 0 52px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    margin:  58px 1% 0 0;
+    background-color: white;
+    text-align: center;
+}
+
+.social-media-icons img {
+    border-radius: 50%;
+    background-color: rgb(189, 116, 116);
+}
+
+.contact-icon {
+    width: 1em;
+}
