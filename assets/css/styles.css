@@ -444,12 +444,19 @@ footer section {
 }
 .contact .wrapper {
     display: flex;
+    justify-content: center;
+    width: 95%;
 }
 
 .contact .get-in-touch {
-    max-width: 40%;
+    max-width: 60%;
     padding-top: 86px ;
     padding-bottom: 62px;
+}
+
+.get-in-touch h2{
+    text-align: left;
+    min-width: 60%;
 }
 
 .contact .button {
@@ -486,7 +493,7 @@ textarea{
 }
 
 .contact .contact-info {
-    max-width: 60%;
+    max-width: 47%;
     padding: 220px 0 50px;
 }
  .contact-info p {
@@ -503,4 +510,219 @@ textarea{
 
 .contact-info p:nth-of-type(3){
     margin: 13px 0;
+}
+
+/* Tablets (481px to 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    /* Adjust font sizes */
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    /* About section adjustments */
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img{
+        margin: auto;
+    }
+
+    .social-media-icons{
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0 0;
+    }
+    /* Working section adjustments */
+    .working-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .working-list li {
+        width: 45%;
+        margin: 20px 2%;
+    }
+
+    .working li:first-child {
+        margin-left: 2%;
+    }
+
+    .working li:last-child {
+        margin-right: 2%;
+    }
+    /* Design section adjustments */
+    .design-figure {
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    .design-image {
+        width: 45%;
+        margin: 20px 2%;
+    }
+
+    /* Contact section adjustments */
+    .contact .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-in-touch,
+    .contact-info {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .about-me{
+        padding: 0 5%;
+    }
+
+    .contact .contact-info, .get-in-touch {
+        max-width: 77%;
+        padding: 20px 0 50px;
+    }
+    }
+
+    .footer .social-media-icons{
+        gap: 1%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .button{
+        max-width: 50%;
+    }
+
+
+@media (max-width: 690px) {
+    .contact .button{
+        max-width: 50%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 519px) {
+    .contact .button {
+        max-width: 60%;
+        text-align: center;
+    }
+}
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    /* Make headings smaller */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    /* Homepage section padding adjustments */
+    .homepage {
+        padding: 200px 0 150px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        margin: auto;
+    }
+
+    .social-media-icons {
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0 0;
+    }
+    /* Working section layout adjustments */
+    .working-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .working-list li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Design section adjustments */
+    .design-figure {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .design-image {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .design-image:nth-child(even) {
+        margin:0 3% 0 2%;
+    }
+
+    /* Contact section adjustments */
+    .contact .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .get-in-touch {
+        max-width: 80%;
+        padding: 20px 0;
+    }
+
+    .contact-info img {
+        display: inline;
+    }
+
+    .contact .contact-info{
+        max-width: 88%;
+        padding: 20px 0 50px;
+    }
+
+    .footer .social-media-icons {
+        gap: 1%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .button {
+        max-width: 50%;
+    }
+
+    .footer .social-media-icons {
+        gap: 2%;
+        margin: 0;
+        padding: 0;
+    }
 }
