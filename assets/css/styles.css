@@ -651,6 +651,11 @@ textarea{
         padding: 0 5%;
     }
 
+    .about h2{
+        margin: 35px 0 15px;
+        text-align: center;
+    }
+
     .contact .get-in-touch{
         width: 80%;
     }
@@ -731,6 +736,11 @@ textarea{
         justify-content: center;
         margin: 20px 0 0;
         padding: 0;
+    }
+
+    .about h2{
+        margin: 35px 0 15px;
+        text-align: left;
     }
 
     .social-media-icons {
