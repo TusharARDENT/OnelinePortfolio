@@ -244,7 +244,7 @@ footer section {
     width: 100%;
     height: auto;
     text-align: end;
-    padding: 386px 0 323px;
+    padding: 195px 0 205px;
 }
 
 .homepage p {
@@ -340,7 +340,7 @@ footer section {
     color: gainsboro;
 }
 .working li:hover{
-    background-color: black;
+    background-color: rgb(122, 105, 105);
     color:whitesmoke;
 }
 /* 
@@ -390,7 +390,9 @@ footer section {
     gap: 5%;
 }
 .about .social-media-icons{
-    margin-left: 4.5%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
 }
 .about .icon-img{
     margin: 0 8px ;
@@ -454,15 +456,20 @@ footer section {
 .contact .wrapper {
     display: flex;
     justify-content: center;
-    width: 95%;
+
 }
 
 .contact .get-in-touch {
-    max-width: 60%;
+    max-width: 80%;
+    width: 65%;
     padding-top: 86px ;
     padding-bottom: 62px;
 }
 
+.contact .contact-info{
+    max-width: 80%;
+    width: 35%;
+}
 .get-in-touch h2{
     text-align: left;
     min-width: 60%;
@@ -478,10 +485,12 @@ footer section {
      background-color: rgb(34, 34, 34);
      font-size: 1em;
      font-weight: 500;
+     text-align: center;
  }
 
 input{
-        padding: 15px;
+        max-width: 100%;
+        width: 47%;
         border: none;
         border-bottom-style: solid;
         border-bottom-width: 0.6px;
@@ -492,6 +501,7 @@ input{
 
 
 textarea{
+        width: 95%;
         border: none;
         border-bottom-style: solid;
         border-bottom-width: 0.6px;
@@ -502,8 +512,9 @@ textarea{
 }
 
 .contact .contact-info {
-    max-width: 47%;
-    padding: 220px 0 50px 20px;
+    max-width: 70%;
+    width: 40%;
+    padding: 200px 0 50px;
 }
  .contact-info p {
      display: inline-block;
@@ -550,7 +561,7 @@ textarea{
         margin: auto;
     }
 
-    .social-media-icons{
+    .about .social-media-icons{
         margin-left: 0;
         display: flex;
         flex-direction: row;
@@ -586,15 +597,20 @@ textarea{
         margin: 20px 2%;
     }
 
+    .design-image:nth-of-type(2){
+        margin: 20px 0 20px 0;
+    }
     /* Contact section adjustments */
     .contact .wrapper {
         flex-direction: column;
         align-items: center;
     }
 
-    .get-in-touch,
+    .get-in-touch{
+        width: 85%;
+    }
     .contact-info {
-        width: 100%;
+        width: 80%;
         padding: 20px 0;
     }
 
@@ -602,10 +618,14 @@ textarea{
         padding: 0 5%;
     }
 
-    .contact .contact-info, .get-in-touch {
-        max-width: 77%;
-        padding: 20px 0 50px;
+    .contact .get-in-touch{
+        width: 80%;
     }
+
+    .contact .contact-info {
+        width: 80%;
+        padding: 20px 0 50px;
+
     }
 
     .footer .social-media-icons{
@@ -617,6 +637,12 @@ textarea{
     .button{
         max-width: 50%;
     }
+    input{
+        box-sizing: border-box;
+        max-width: 49%;
+     }
+     
+}
 
 
 @media (max-width: 690px) {
@@ -691,7 +717,7 @@ textarea{
     }
 
     .design-image {
-        width: 80%;
+        max-width: 70%;
         margin: 20px auto;
     }
 
@@ -706,7 +732,7 @@ textarea{
     }
 
     .contact .get-in-touch {
-        max-width: 80%;
+        max-width: 77%;
         padding: 20px 0;
     }
 
@@ -716,6 +742,7 @@ textarea{
 
     .contact .contact-info{
         max-width: 88%;
+        width: 80%;
         padding: 20px 0 50px;
     }
 
@@ -733,5 +760,16 @@ textarea{
         gap: 2%;
         margin: 0;
         padding: 0;
+    }
+
+    input{
+        max-width: 100%;
+        width: 100%;
+        padding: 15px 100px 15px 15px;
+
+    }
+
+    textarea{
+        max-width: 100%;
     }
 }
