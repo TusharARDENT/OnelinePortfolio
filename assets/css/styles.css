@@ -1,0 +1,829 @@
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* Force scrollbar */
+html {
+    overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type=radio] {
+    vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type=button],
+input[type=submit],
+button {
+    cursor: pointer;
+}
+
+strong {
+    font-weight: bold;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+em {
+    font-style: italic;
+}
+
+img {
+    width: 100%;
+    border: 0;
+    vertical-align: middle;
+}
+
+sub,
+sup {
+    vertical-align: baseline;
+    position: relative;
+    font-size: 55%;
+    line-height: 0;
+}
+
+sup {
+    top: -0.7em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+			========================== */
+.cf:before,
+.cf:after {
+    display: table;
+    content: " ";
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+/* for all */
+body {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* for wrapper */
+.wrapper {
+    max-width: 1360px;
+    width: 82%;
+    margin: 0 auto;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Added Header font sizes for h1 to h4 */
+h1 {
+    font-size: 2.8em;
+    font-weight: 450;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.1em;
+    line-height: 2em;
+    font-weight: 700;
+}
+
+/* background color for sections */
+main section:nth-child(even) {
+    background-color: rgb(238, 245, 243);
+}
+
+footer section {
+    background-color: rgba(99, 107, 249, 0.647);
+    text-align: center;
+}
+
+/* Styling Attributes for hompage */
+.homepage {
+    background-image: url("/assets/images/banner.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: end;
+    padding: 195px 0 205px;
+}
+
+.homepage p {
+    padding: 2% 0 1.6% 35%;
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-align: end;
+}
+
+ .button {
+     max-width: 40%;
+     padding: 1.6% 5%;
+     border-radius: 30px;
+     margin: 40px 0;
+     background-color:  rgb(116, 114, 114);
+     font-size: 0.8em;
+     font-weight: 500;
+ }
+
+ a {
+     color: white;
+     font-size: small;
+ }
+
+
+ /* Styling attributes for social media icons */
+ .icon-img {
+     width: 3.5em;
+ }
+ 
+ .social-media-icons li{
+    width: 2em;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0.8%;
+}
+
+i{
+    color: black;
+}
+
+ /* Styling attributes for footer */
+ .footer{
+    padding: 105px 0 55px;
+}
+
+.footer p{
+    padding: 22px 0 28px;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/* Styling attributes for working */
+.working {
+    padding: 83px 0 60px;
+}
+
+.working p {
+    color: black;
+    font-size: 1em;
+    line-height: 1.6em;
+    text-align: center;
+    padding: 13px 0;
+    font-size: medium;
+    font-weight: 500;
+
+}
+
+.working i{
+    max-width: 45%;
+    
+}
+
+.working-list {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.working-list li {
+    min-width: 23%;
+    height: auto;
+    border-style: solid;
+    padding: 60px 1.5% 58px;
+    border-color: black;
+    border-radius: 5px;
+    margin: 35px 2% 50px;
+    background-color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.working-list li p{
+    color: gainsboro;
+}
+.working li:hover{
+    background-color: rgb(122, 105, 105);
+    color:whitesmoke;
+}
+/* 
+.working-list li:nth-child(3){
+    padding-bottom: 45px;
+} */
+
+.working h3{
+    margin-bottom: 7px;
+}
+
+.working-list p {
+    color: black;
+    line-height: 1.6em;
+    padding: 0;
+}
+
+.working li:first-child {
+    margin-left: 0;
+}
+
+.working li:last-child {
+    margin-right: 0;
+}
+
+
+/* Styling attributes for about */
+.about-img {
+    max-width: 320px;
+    max-height: 348px;
+    height: 1%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin-bottom: 2%
+}
+
+.about {
+    padding: 105px 0 105px;
+}
+
+
+.about-me {
+    display: flex;
+    gap: 5%;
+}
+.about .social-media-icons{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 65px;
+}
+
+.about .social-media-icons li{
+    width: 2em;
+    padding: 4px;
+    border-radius: 53%;
+    background-color: rgb(187, 175, 175);
+    margin: 0.8%;
+    text-align: center;
+}
+.about .icon-img{
+    margin: 0 8px ;
+}
+
+.about h2{
+    margin: 35px 0 15px;
+    text-align: left;
+}
+
+.about p{
+    line-height: 1.6em;
+}
+
+.about p:nth-of-type(2){
+    margin: 30px 0 10px;
+}
+/* Syling attributes for design */
+.design-figure {
+    display: flex;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.design-image:nth-child(even){
+    margin: 58px 3% 0 2%;
+}
+
+.design{
+    padding: 86px 0 100px;
+    text-align: center;
+}
+
+.design p{
+    margin: 13px 0 15px;
+}
+
+.design-image {
+    max-width: 95%;
+    min-width: 33.5%;
+    max-height: 500px;
+    /* border-style: solid; */
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-top:  58px;
+    background-color: white;
+    text-align: center;
+}
+
+.social-media-icons img {
+    border-radius: 50%;
+    background-color: rgb(189, 116, 116);
+}
+
+/* Styling attributes for contact */
+
+
+.contact p{
+    margin: 12px 0 10px;
+    font-size: 1em;
+}
+.contact .wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact .get-in-touch {
+    max-width: 80%;
+    width: 65%;
+    padding-top: 86px ;
+    padding-bottom: 62px;
+}
+
+.contact .contact-info{
+    max-width: 80%;
+    width: 35%;
+}
+.get-in-touch h2{
+    text-align: left;
+    min-width: 60%;
+}
+
+.contact .button {
+    display: block;
+    justify-content: end;
+     max-width: 40%;
+     padding: 15px 4%;
+     border-radius: 30px;
+     margin: 32px 0 32px 55%;
+     background-color: rgb(116, 114, 114);
+     font-size: 1em;
+     font-weight: 500;
+     text-align: center;
+ }
+
+ .contact-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .contact i{
+    margin-right: 10px;
+ }
+
+
+input{
+        max-width: 100%;
+        width: 45%;
+        padding: 15px;
+        border: none;
+        border-bottom-style: solid;
+        border-bottom-width: 0.6px;
+        border-bottom-color: black;
+        margin: 56px 15px 35px 0;
+        font-size: 1em;
+}
+
+
+textarea{
+        width: 95%;
+        border: none;
+        border-bottom-style: solid;
+        border-bottom-width: 0.6px;
+        border-bottom-color: black;
+        padding: 15px;
+        font-family: "Poppins", sans-serif;
+        font-size: 1em;
+}
+
+.contact .contact-info {
+    max-width: 70%;
+    width: 40%;
+    padding: 200px 0 50px;
+}
+ .contact-info p {
+     display: inline-block;
+     text-align: left;
+     margin: 0;
+ }
+
+ .contact-info h2{
+    text-align: left;
+ }
+
+.contact-info p:first-of-type{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.contact-info p:nth-of-type(3){
+    margin: 13px 0;
+}
+
+/* Tablets (481px to 1024px) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    /* Adjust font sizes */
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    /* About section adjustments */
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img{
+        margin: auto;
+    }
+
+    .about .social-media-icons{
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0 0;
+        padding: 0;
+    }
+    /* Working section adjustments */
+    .working-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .working-list li {
+        width: 45%;
+        padding: 90px 20px;
+        margin: 20px 2%;
+    }
+
+    .working li:first-child {
+        margin-left: 2%;
+    }
+
+    .working li:last-child {
+        margin-right: 2%;
+    }
+    /* Design section adjustments */
+    .design-figure {
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    .design-image {
+        width: 80%;
+        margin: 20px 2%;
+    }
+
+    .design-image:nth-of-type(2){
+        margin: 20px 0 20px 0;
+    }
+    /* Contact section adjustments */
+    .contact .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-in-touch{
+        width: 85%;
+    }
+    .contact-info {
+        width: 80%;
+        padding: 20px 0;
+    }
+
+    .about-me{
+        padding: 0 5%;
+    }
+
+    .about h2{
+        margin: 35px 0 15px;
+        text-align: center;
+    }
+
+    .contact .get-in-touch{
+        width: 80%;
+    }
+
+    .contact .contact-info {
+        width: 80%;
+        padding: 20px 0 50px;
+
+    }
+
+    .footer .social-media-icons{
+        gap: 1%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .button{
+        max-width: 50%;
+    }
+    input{
+        box-sizing: border-box;
+        max-width: 49%;
+     }
+     
+}
+
+
+@media (max-width: 690px) {
+    .contact .button{
+        max-width: 50%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 519px) {
+    .contact .button {
+        max-width: 60%;
+        text-align: center;
+    }
+}
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    /* Make headings smaller */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    /* Homepage section padding adjustments */
+    .homepage {
+        padding: 200px 0 150px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        margin: auto;
+    }
+
+    .about .social-media-icons{
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0 0;
+        padding: 0;
+    }
+
+    .about h2{
+        margin: 35px 0 15px;
+        text-align: left;
+    }
+
+    .social-media-icons {
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0 0;
+    }
+    /* Working section layout adjustments */
+    .working-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .working-list li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Design section adjustments */
+    .design-figure {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .design-image {
+        max-width: 70%;
+        margin: 20px auto;
+    }
+
+    .design-image:nth-child(even) {
+        margin:0 3% 0 2%;
+    }
+
+    /* Contact section adjustments */
+    .contact .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .get-in-touch {
+        max-width: 77%;
+        padding: 20px 0;
+    }
+
+    .contact-info img {
+        display: inline;
+    }
+
+    .contact .contact-info{
+        max-width: 88%;
+        width: 80%;
+        padding: 20px 0 50px;
+    }
+
+    .footer .social-media-icons {
+        gap: 1%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .button {
+        max-width: 50%;
+    }
+    .contact .button {
+         margin: 32px 0 32px 20%;
+     }
+    .footer .social-media-icons {
+        gap: 2%;
+        margin: 0;
+        padding: 0;
+    }
+
+    input{
+        max-width: 100%;
+        width: 100%;
+        padding: 15px 100px 15px 15px;
+
+    }
+
+    textarea{
+        max-width: 100%;
+    }
+}
