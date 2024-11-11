@@ -313,6 +313,7 @@ footer section {
 
 .working-img {
     max-width: 45%;
+    
 }
 
 .working-list {
@@ -333,6 +334,14 @@ footer section {
     background-color: white;
     font-size: 1.2em;
     text-align: center;
+}
+
+.working-list li p{
+    color: gainsboro;
+}
+.working li:hover{
+    background-color: black;
+    color:whitesmoke;
 }
 /* 
 .working-list li:nth-child(3){
