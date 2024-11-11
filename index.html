@@ -23,19 +23,19 @@
 <body>
   <div class="container">
     <!-- header content of the page -->
-    <header>
-        <section class="homepage">
-            <div class="wrapper">
-              <h1>Hello, I am Tushar</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eveniet praesentium recusandae eaque
-                consequatur aliquam fuga, exercitationem vitae delectus ex, cumque obcaecati sequi culpa qui earum itaque
-                modi necessitatibus aspernatur.</p>
-              <a href="#home" class="button">DISCOVER MORE</a>
-            </div>
-          </section>
-    </header>
+    <header></header>
     <!-- main content of the page -->
     <main>
+      <!-- Homepage section -->
+      <section class="homepage">
+        <div class="wrapper">
+          <h1>Hello, I am Tushar</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eveniet praesentium recusandae eaque
+            consequatur aliquam fuga, exercitationem vitae delectus ex, cumque obcaecati sequi culpa qui earum itaque
+            modi necessitatibus aspernatur.</p>
+          <a href="#home" class="button">DISCOVER MORE</a>
+        </div>
+      </section>
       <!-- working section -->
       <section class="working">
         <div class="wrapper">
@@ -45,25 +45,25 @@
           <ul class="working-list">
       
             <li>
-              <img src="assets/images/smiley.png" alt="smiley-img" class="working-img">
+              <i class="fa-regular fa-face-smile"></i>
               <h3>Graphic Design</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cumque? Lorem ipsum dolor sit. que</p>
             </li>
       
             <li>
-              <img src="assets/images/camera.png" alt="camera-img" class="working-img">
+              <i class="fa-solid fa-camera"></i>              
               <h3>Graphic Design</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cumque Lorem, ipsum dolor.<p>
             </li>
       
             <li>
-              <img src="assets/images/bulb.png" alt="bulb-img" class="working-img">
+              <i class="fa-solid fa-lightbulb"></i>
               <h3>Graphic Design</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cumque?</p>
             </li>
       
             <li>
-              <img src="assets/images/screen.png" alt="screen-img" class="working-img">
+              <i class="fa-solid fa-display"></i>
               <h3>Graphic Design</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cumque? Lorem ipsum dolor sit amet.</p>
             </li>
@@ -81,22 +81,22 @@
             <div class="about-me-info">
               <h2>a little more about Tushar</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <br><br>
+
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores repudiandae quo eaque veniam laborum
                 nisi
                 reiciendis repellat ducimus deserunt libero.</p>
-                <br>
+ 
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi perspiciatis ipsum architecto aperiam, qui
                 explicabo
                 consectetur praesentium. Recusandae, obcaecati omnis.</p>
             </div>
           </div>
-          <figure class="social-media-icons">
-            <a href="#facebook"><img src="assets/images/facebook.png" alt="facebook-icon" class="icon-img"></a>
-            <a href="#twitter"><img src="assets/images/twitter.png" alt="twitter-icon" class="icon-img"></a>
-            <a href="#instagram"><img src="assets/images/instagram.png" alt="instagram-icon" class="icon-img"></a>
-            <a href="behance"><img src="assets/images/behance.png" alt="behance-icon" class="icon-img"></a>
-          </figure>
+          <ul class="social-media-icons">
+            <li><a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#behance"><i class="fa-brands fa-behance"></i></a></li>
+          </ul>
         </div>
       </section>
 
@@ -106,11 +106,11 @@
           <h2>Selected Designs</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       
-          <figure class="design-figure">
-            <img src="assets/images/camera.png" alt="design-1" class="design-image">
-            <img src="assets/images/camera.png" alt="design-1" class="design-image">
-            <img src="assets/images/camera.png" alt="design-1" class="design-image">
-          </figure>
+          
+          <figure class="design-figure"><img src="assets/images/camera.png" alt="design-1" class="design-image"></figure>
+          <figure class="design-figure"><img src="assets/images/camera.png" alt="design-1" class="design-image"></figure>
+          <figure class="design-figure"><img src="assets/images/camera.png" alt="design-1" class="design-image"></figure>
+          
       
         </div>
       </section>
@@ -124,7 +124,7 @@
             <input type="text" name="user-name" id="user-name" placeholder="Name">
             <input type="email" name="user-email" id="user-email" placeholder="Email">
             <br>
-            <textarea type="text" name="message" id="message" rows="5" colums="80" placeholder="Message"></textarea>
+            <textarea type="text" name="message" id="message" rows="5" cols="15" placeholder="Message"></textarea>
             <br>
             <a href="#home" class="button">Send Message</a>
           </div>
@@ -132,13 +132,11 @@
             <h2>Contact Info</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime neque aliquid ipsam modi officia fugit
               possimus at, adipisci sunt soluta alias praesentium, maiores, tenetur aspernatur.</p>
-            <img src="assets/images/map-pin.png" alt="map-pin-icon" class="contact-icon">
-            <p>Address</p><br>
-            <img src="assets/images/message.png" alt="email-icon" class="contact-icon">
-            <p>email.com</p><br>
-            <img src="assets/images/landline.png" alt="landline-icon" class="contact-icon">
-            <p>landline</p><br>
-          </div>
+              <ul class="social-media-icons">
+                <li><i class="fa-solid fa-map-pin"></i>Address</li>
+                <li><a href="#email"><i class="fa-solid fa-message"></i></a>email.com</li>
+                <li><a href="#landline"><i class="fa-solid fa-phone"></i></i></a>859384934834</li>
+              </ul>
         </div>
       </section>
 
@@ -147,14 +145,14 @@
      <footer>
             <section class="footer">
               <div class="wrapper">
-                <p>Lorem ipsum dolor sit amet.| Lorem, ipsum.</p>
-                <fig class="social-media-icons">
-                  <a href="#facebook"><img src="assets/images/bulb.png" alt="facebook-icon" class="icon-img"></a>
-                  <a href="#twitter"><img src="assets/images/bulb.png" alt="twitter-icon" class="icon-img"></a>
-                  <a href="#instagram"><img src="assets/images/bulb.png" alt="instagram-icon" class="icon-img"></a>
-                  <a href="telegram"><img src="assets/images/bulb.png" alt="telegram-icon" class="icon-img"></a>
-                  <a href="github"><img src="assets/images/bulb.png" alt="github-icon" class="icon-img"></a>
-                </fig>
+                <h4>Lorem ipsum dolor sit amet.| Lorem, ipsum.</h4>
+                <ul class="social-media-icons">
+                  <li><a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="#twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#behance"><i class="fa-brands fa-behance"></i></a></li>
+                  <li><a href="#github"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
               </div>
             </section>
      </footer>
