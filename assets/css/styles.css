@@ -227,7 +227,7 @@ h3 {
 }
 
 /* background color for sections */
-main section:nth-child(odd) {
+main section:nth-child(even) {
     background-color: rgb(238, 245, 243);
 }
 
@@ -238,13 +238,15 @@ footer section {
 
 /* Styling Attributes for hompage */
 .homepage {
-    background-image: url("/assets/images/homepage.jpg");
+    background-image: url("/assets/images/banner.jpg");
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     width: 100%;
     height: auto;
     text-align: end;
-    padding: 386px 0 323px;
+    padding: 195px 0 205px;
 }
 
 .homepage p {
@@ -261,7 +263,7 @@ footer section {
      padding: 1.6% 5%;
      border-radius: 30px;
      margin: 40px 0;
-     background-color: rgb(34, 34, 34);
+     background-color:  rgb(116, 114, 114);
      font-size: 0.8em;
      font-weight: 500;
  }
@@ -277,12 +279,17 @@ footer section {
      width: 3.5em;
  }
  
- .social-media-icons img {
-     border-radius: 50%;
-     background-color: white;
-     margin: 5%;
-    padding: 5px;
- }
+ .social-media-icons li{
+    width: 2em;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0.8%;
+}
+
+i{
+    color: black;
+}
 
  /* Styling attributes for footer */
  .footer{
@@ -311,7 +318,7 @@ footer section {
 
 }
 
-.working-img {
+.working i{
     max-width: 45%;
     
 }
@@ -340,7 +347,7 @@ footer section {
     color: gainsboro;
 }
 .working li:hover{
-    background-color: black;
+    background-color: rgb(122, 105, 105);
     color:whitesmoke;
 }
 /* 
@@ -369,7 +376,7 @@ footer section {
 
 /* Styling attributes for about */
 .about-img {
-    max-width: 32%;
+    max-width: 320px;
     max-height: 348px;
     height: 1%;
     border-radius: 10px;
@@ -381,16 +388,24 @@ footer section {
     padding: 105px 0 105px;
 }
 
-.about h2 {
-    margin-top: 5%;
-}
 
 .about-me {
     display: flex;
     gap: 5%;
 }
 .about .social-media-icons{
-    margin-left: 4.5%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 65px;
+}
+
+.about .social-media-icons li{
+    width: 2em;
+    padding: 4px;
+    border-radius: 53%;
+    background-color: rgb(187, 175, 175);
+    margin: 0.8%;
+    text-align: center;
 }
 .about .icon-img{
     margin: 0 8px ;
@@ -404,6 +419,9 @@ footer section {
     line-height: 1.6em;
 }
 
+.about p:nth-of-type(2){
+    margin: 30px 0 10px;
+}
 /* Syling attributes for design */
 .design-figure {
     display: flex;
@@ -425,14 +443,14 @@ footer section {
 }
 
 .design-image {
-    max-width: 30%;
+    max-width: 95%;
     min-width: 33.5%;
-    padding: 40px 0 52px;
-    border-style: solid;
+    max-height: 500px;
+    /* border-style: solid; */
     border-color: black;
     border-width: 2px;
     border-radius: 5px;
-    margin:  58px 1% 0 0;
+    margin-top:  58px;
     background-color: white;
     text-align: center;
 }
@@ -443,9 +461,7 @@ footer section {
 }
 
 /* Styling attributes for contact */
-.contact-icon {
-    width: 1em;
-}
+
 
 .contact p{
     margin: 12px 0 10px;
@@ -454,15 +470,20 @@ footer section {
 .contact .wrapper {
     display: flex;
     justify-content: center;
-    width: 95%;
+
 }
 
 .contact .get-in-touch {
-    max-width: 60%;
+    max-width: 80%;
+    width: 65%;
     padding-top: 86px ;
     padding-bottom: 62px;
 }
 
+.contact .contact-info{
+    max-width: 80%;
+    width: 35%;
+}
 .get-in-touch h2{
     text-align: left;
     min-width: 60%;
@@ -472,26 +493,41 @@ footer section {
     display: block;
     justify-content: end;
      max-width: 40%;
-     padding: 15px 5%;
+     padding: 15px 4%;
      border-radius: 30px;
-     margin: 32px 0;
-     background-color: rgb(34, 34, 34);
+     margin: 32px 0 32px 55%;
+     background-color: rgb(116, 114, 114);
      font-size: 1em;
      font-weight: 500;
+     text-align: center;
  }
 
+ .contact-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .contact i{
+    margin-right: 10px;
+ }
+
+
 input{
+        max-width: 100%;
+        width: 45%;
         padding: 15px;
         border: none;
         border-bottom-style: solid;
         border-bottom-width: 0.6px;
         border-bottom-color: black;
-        margin: 56px 0 35px;
+        margin: 56px 15px 35px 0;
         font-size: 1em;
 }
 
 
 textarea{
+        width: 95%;
         border: none;
         border-bottom-style: solid;
         border-bottom-width: 0.6px;
@@ -502,13 +538,18 @@ textarea{
 }
 
 .contact .contact-info {
-    max-width: 47%;
-    padding: 220px 0 50px 20px;
+    max-width: 70%;
+    width: 40%;
+    padding: 200px 0 50px;
 }
  .contact-info p {
      display: inline-block;
      text-align: left;
      margin: 0;
+ }
+
+ .contact-info h2{
+    text-align: left;
  }
 
 .contact-info p:first-of-type{
@@ -550,12 +591,13 @@ textarea{
         margin: auto;
     }
 
-    .social-media-icons{
+    .about .social-media-icons{
         margin-left: 0;
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin: 20px 0 0;
+        padding: 0;
     }
     /* Working section adjustments */
     .working-list {
@@ -565,6 +607,7 @@ textarea{
 
     .working-list li {
         width: 45%;
+        padding: 90px 20px;
         margin: 20px 2%;
     }
 
@@ -582,19 +625,24 @@ textarea{
     }
 
     .design-image {
-        width: 45%;
+        width: 80%;
         margin: 20px 2%;
     }
 
+    .design-image:nth-of-type(2){
+        margin: 20px 0 20px 0;
+    }
     /* Contact section adjustments */
     .contact .wrapper {
         flex-direction: column;
         align-items: center;
     }
 
-    .get-in-touch,
+    .get-in-touch{
+        width: 85%;
+    }
     .contact-info {
-        width: 100%;
+        width: 80%;
         padding: 20px 0;
     }
 
@@ -602,21 +650,31 @@ textarea{
         padding: 0 5%;
     }
 
-    .contact .contact-info, .get-in-touch {
-        max-width: 77%;
-        padding: 20px 0 50px;
+    .contact .get-in-touch{
+        width: 80%;
     }
+
+    .contact .contact-info {
+        width: 80%;
+        padding: 20px 0 50px;
+
     }
 
     .footer .social-media-icons{
         gap: 1%;
-        margin: 0;
+        margin-top: 20px;
         padding: 0;
     }
 
     .button{
         max-width: 50%;
     }
+    input{
+        box-sizing: border-box;
+        max-width: 49%;
+     }
+     
+}
 
 
 @media (max-width: 690px) {
@@ -665,6 +723,15 @@ textarea{
         margin: auto;
     }
 
+    .about .social-media-icons{
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0 0;
+        padding: 0;
+    }
+
     .social-media-icons {
         margin-left: 0;
         display: flex;
@@ -691,7 +758,7 @@ textarea{
     }
 
     .design-image {
-        width: 80%;
+        max-width: 70%;
         margin: 20px auto;
     }
 
@@ -706,7 +773,7 @@ textarea{
     }
 
     .contact .get-in-touch {
-        max-width: 80%;
+        max-width: 77%;
         padding: 20px 0;
     }
 
@@ -716,6 +783,7 @@ textarea{
 
     .contact .contact-info{
         max-width: 88%;
+        width: 80%;
         padding: 20px 0 50px;
     }
 
@@ -728,10 +796,23 @@ textarea{
     .button {
         max-width: 50%;
     }
-
+    .contact .button {
+         margin: 32px 0 32px 20%;
+     }
     .footer .social-media-icons {
         gap: 2%;
         margin: 0;
         padding: 0;
+    }
+
+    input{
+        max-width: 100%;
+        width: 100%;
+        padding: 15px 100px 15px 15px;
+
+    }
+
+    textarea{
+        max-width: 100%;
     }
 }
