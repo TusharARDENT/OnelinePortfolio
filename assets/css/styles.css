@@ -494,7 +494,7 @@ textarea{
 
 .contact .contact-info {
     max-width: 47%;
-    padding: 220px 0 50px;
+    padding: 220px 0 50px 20px;
 }
  .contact-info p {
      display: inline-block;
