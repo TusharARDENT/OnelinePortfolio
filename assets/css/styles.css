@@ -238,7 +238,7 @@ footer section {
 
 /* Styling Attributes for hompage */
 .homepage {
-    background-image: url("/assets/images/banner.jpg");
+    background-image: url("./assets/images/banner.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
